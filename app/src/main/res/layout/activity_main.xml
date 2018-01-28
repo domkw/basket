@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.counter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="score a"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center"
+                android:id="@+id/scoa"
+                android:layout_margin="16dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:onClick="sco3a"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:onClick="sco2a"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="free"
+                android:onClick="sco1a"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+
+            >
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="score b"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:id="@+id/scob"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:onClick="sco3b"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:onClick="sco2b"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="free"
+                android:onClick="sco1b"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:text="rest"
+        android:onClick="rest"
+
+
+        />
+</RelativeLayout>
